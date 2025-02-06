@@ -22,7 +22,7 @@ class MovieListViewController: UIViewController {
         layout.itemSize = CGSize(width: view.frame.width / 2 - 15, height: 300) // 2 colunas
         layout.minimumInteritemSpacing = 10
         layout.minimumLineSpacing = 10
-        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
         
         // Criar a collection view
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
@@ -45,7 +45,7 @@ class MovieListViewController: UIViewController {
 }
 
 // MARK: - UICollectionViewDataSource & Delegate
-extension MovieListViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension MovieListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.numberOfMovies()
     }
@@ -57,7 +57,14 @@ extension MovieListViewController: UICollectionViewDataSource, UICollectionViewD
         return cell ?? UICollectionViewCell()
     }
     
+
+}
+
+extension MovieListViewController: UICollectionViewDelegate {
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("filme foi pressionado")
+        collectionView.deselectItem(at: indexPath, animated: true )
     }
+    
 }

@@ -67,14 +67,10 @@
 		5BBF2D512D42A9040033E31E /* ProjectMoviesApp */ = {
 			isa = PBXGroup;
 			children = (
+				5BE1C75E2D54DBDD0003E580 /* Resources */,
 				5BBF2D6B2D42AA6A0033E31E /* View */,
 				5BBF2D6A2D42AA630033E31E /* ViewModel */,
 				5BBF2D682D42AA240033E31E /* Model */,
-				5BBF2D522D42A9040033E31E /* AppDelegate.swift */,
-				5BBF2D542D42A9040033E31E /* SceneDelegate.swift */,
-				5BBF2D562D42A9040033E31E /* MovieListViewController.swift */,
-				5BBF2D5B2D42A9070033E31E /* Assets.xcassets */,
-				5BBF2D5D2D42A9070033E31E /* LaunchScreen.storyboard */,
 				5BBF2D602D42A9070033E31E /* Info.plist */,
 			);
 			path = ProjectMoviesApp;
@@ -99,6 +95,7 @@
 		5BBF2D6B2D42AA6A0033E31E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5BBF2D562D42A9040033E31E /* MovieListViewController.swift */,
 				5BBF2D702D42AC240033E31E /* CollectionViewCell */,
 			);
 			path = View;
@@ -110,6 +107,17 @@
 				5BBF2D712D42AC760033E31E /* MovieCollectionViewCell.swift */,
 			);
 			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		5BE1C75E2D54DBDD0003E580 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5BBF2D522D42A9040033E31E /* AppDelegate.swift */,
+				5BBF2D542D42A9040033E31E /* SceneDelegate.swift */,
+				5BBF2D5B2D42A9070033E31E /* Assets.xcassets */,
+				5BBF2D5D2D42A9070033E31E /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		B896E457061E5FFC051CEB2C /* Frameworks */ = {
@@ -126,7 +134,6 @@
 				C711B2E79E997C5159655BE5 /* Pods-ProjectMoviesApp.debug.xcconfig */,
 				82AAC89F30FAA19CDEE3B485 /* Pods-ProjectMoviesApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
