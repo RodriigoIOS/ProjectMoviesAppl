@@ -405,6 +405,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		5BFFFFF42D5C219D001821C4 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5EE6C8F0CB40E72006682741E9A99374 /* Pods-ProjectMoviesApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -821,6 +826,12 @@
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 4CE3488E7CC39738A6B3B7DAD1372CC5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5BFFFFF42D5C219D001821C4 /* Products */;
+					ProjectRef = 5B21ABF62D5B726600EED9F4 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EAB6664457E8A2A63CE5933C543101C4 /* Pods-ProjectMoviesApp */,
